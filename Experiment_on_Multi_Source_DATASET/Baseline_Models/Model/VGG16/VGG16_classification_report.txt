@@ -1,0 +1,12 @@
+                       precision    recall  f1-score   support
+
+bacterial_leaf_blight     0.9651    0.9325    0.9485       237
+           brown_spot     0.9595    0.9435    0.9514       301
+              healthy     1.0000    0.9822    0.9910       225
+           leaf_blast     0.9475    0.9275    0.9374       331
+          leaf_scaled     0.9035    0.9286    0.9159       252
+    narrow_brown_spot     0.8231    0.9308    0.8736       130
+
+             accuracy                         0.9404      1476
+            macro avg     0.9331    0.9408    0.9363      1476
+         weighted avg     0.9423    0.9404    0.9409      1476

@@ -1,0 +1,81 @@
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS / system files
+__MACOSX/
+.DS_Store
+Thumbs.db
+
+# Actual dataset folders
+Experiment_on_Multi_Source_DATASET/Rice_Disease_Dataset/
+Experiment_on_proposed_DATASET/Rice_Disease_Dataset/
+
+# Common dataset/data folders
+dataset/
+datasets/
+data/
+raw_data/
+processed_data/
+
+# Archive files
+*.zip
+*.rar
+*.tar
+*.tar.gz
+*.7z
+
+# Large data / array files
+*.csv
+*.xlsx
+*.xls
+*.json
+*.npy
+*.npz
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+
+# Image dataset files
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.tif
+*.tiff
+*.webp
+
+# Model/checkpoint outputs
+models/
+checkpoints/
+weights/
+saved_models/
+runs/
+outputs/
+results/
+logs/
+*.pt
+*.pth
+*.ckpt
+*.keras
+*.pb
+*.tflite
+
+# IDE
+.vscode/
+.idea/
+
+# Environment files
+.env
+.env.*
