@@ -33,12 +33,22 @@ IoT-RiceMobileNet is a deep learning model built on a MobileNetV2 backbone for c
 
 ## Datasets
 
-The model is evaluated on two dataset settings:
+The model was evaluated using two dataset settings:
 
-1. **Constructed RLD dataset** — 7,092 images combining self-collected field images (Chapulia, Gazipur, Bangladesh) with publicly available Kaggle images. Self collected 773 images are uploaded in images folder in this repo and kaggle datasets will be found on https://www.kaggle.com/datasets/dedeikhsandwisaputra/rice-leafs-disease-dataset/data
-2. **Multi-source benchmark dataset** — 14,758 images integrated from public Kaggle and Mendeley sources. It can be found here:
-- https://www.kaggle.com/datasets/anshulm257/rice-disease-dataset
-- https://data.mendeley.com/datasets/hx6f852hw4/2
+1. **Constructed RLD dataset** — 7,092 images combining self-collected field images and publicly available Kaggle rice leaf images. This repository redistributes only the 773 self-collected field images in the `images/` folder. The Kaggle images should be obtained from their original source:  
+   https://www.kaggle.com/datasets/dedeikhsandwisaputra/rice-leafs-disease-dataset/data
+
+2. **Multi-source benchmark dataset** — 14,758 images integrated from public Kaggle and Mendeley sources. These third-party images are not redistributed in this repository and should be obtained from their original sources:
+   - https://www.kaggle.com/datasets/anshulm257/rice-disease-dataset
+   - https://data.mendeley.com/datasets/hx6f852hw4/2
+
+## Data availability
+
+The source code and self-collected rice leaf image dataset are archived on Zenodo:
+
+https://doi.org/10.5281/zenodo.21140529
+
+This repository includes the model implementation, requirements file, README documentation, and 773 self-collected rice leaf images organized by class. Third-party datasets used in the study are not redistributed here and should be accessed from their original public sources.
 
 ## Getting started
 
@@ -60,4 +70,6 @@ Manuscript under review. Citation details will be added upon publication.
 
 ## License
 
-To be added.
+Code in this repository is released under the MIT License.
+
+The self-collected rice leaf images are released for research and academic use under the Creative Commons Attribution 4.0 International (CC BY 4.0) License. Third-party datasets referenced in this repository are governed by their original licenses and are not redistributed here.
