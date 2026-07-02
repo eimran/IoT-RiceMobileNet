@@ -2,7 +2,7 @@
 
 **A lightweight improved MobileNetV2 model for real-time multi-class rice leaf disease detection using IoT.**
 
-IoT-RiceMobileNet is a compact deep learning model built on a MobileNetV2 backbone for classifying six rice leaf conditions — five diseases (bacterial leaf blight, brown spot, leaf blast, leaf scald, narrow brown spot) and healthy leaves. It is designed for real-time deployment on resource-constrained mobile and edge devices, and is integrated into an end-to-end IoT pipeline (ESP32-CAM → cloud inference → mobile/web app).
+IoT-RiceMobileNet is a compact deep learning model built on a MobileNetV2 backbone for classifying six rice leaf conditions: five diseases (bacterial leaf blight, brown spot, leaf blast, leaf scald, narrow brown spot) and healthy leaves. It is designed for real-time deployment on resource-constrained mobile and edge devices, and is integrated into an end-to-end IoT pipeline (ESP32-CAM → cloud inference → mobile/web app).
 
 ## Highlights
 
@@ -20,7 +20,7 @@ IoT-RiceMobileNet is a compact deep learning model built on a MobileNetV2 backbo
 ├── Experiment_on_proposed_DATASET/     # Training & evaluation on the constructed RLD dataset
 ├── Experiment_on_Multi_Source_DATASET/ # Training & evaluation on the multi-source dataset
 ├── plot_models_comparison.ipynb        # Comparative plots across all evaluated models
-├── images        # Comparative plots across all evaluated models
+├── images                              # Self collected pre-processed images
     ├── bacterial_leaf_blight/
     ├── brown_spot/
     ├── healthy/
@@ -35,11 +35,8 @@ IoT-RiceMobileNet is a compact deep learning model built on a MobileNetV2 backbo
 
 The model is evaluated on two dataset settings:
 
-1. **Constructed RLD dataset** — 7,092 images combining self-collected field images (Chapulia, Gazipur, Bangladesh) with publicly available Kaggle images.
-2. **Multi-source benchmark dataset** — 14,758 images integrated from public Kaggle and Mendeley sources.
-
-Public source datasets:
-- https://www.kaggle.com/datasets/dedeikhsandwisaputra/rice-leafs-disease-dataset/data
+1. **Constructed RLD dataset** — 7,092 images combining self-collected field images (Chapulia, Gazipur, Bangladesh) with publicly available Kaggle images. Self collected 773 images are uploaded in images folder in this repo and kaggle datasets will be found on https://www.kaggle.com/datasets/dedeikhsandwisaputra/rice-leafs-disease-dataset/data
+2. **Multi-source benchmark dataset** — 14,758 images integrated from public Kaggle and Mendeley sources. It can be found here:
 - https://www.kaggle.com/datasets/anshulm257/rice-disease-dataset
 - https://data.mendeley.com/datasets/hx6f852hw4/2
 
@@ -56,14 +53,6 @@ pip install -r requirements.txt
 
 Run the notebooks in `Experiment_on_proposed_DATASET/` and `Experiment_on_Multi_Source_DATASET/` to reproduce training and evaluation, and `plot_models_comparison.ipynb` for the comparison figures.
 
-### Running the inference API
-
-```bash
-cd API
-uvicorn main:app --host 0.0.0.0 --port 8000
-```
-
-The API exposes `/predict` (POST, `multipart/form-data` JPEG upload) and returns a JSON response with the predicted class label and confidence score.
 
 ## Citation
 
