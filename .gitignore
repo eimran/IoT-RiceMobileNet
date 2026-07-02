@@ -56,6 +56,10 @@ processed_data/
 *.tiff
 *.webp
 
+# Allow self-collected image dataset folder
+!images/
+!images/**
+
 # Model/checkpoint outputs
 models/
 checkpoints/
