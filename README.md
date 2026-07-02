@@ -1,8 +1,8 @@
 # IoT-RiceMobileNet
 
-**A lightweight improved MobileNetV2 model for real-time multi-class rice leaf disease detection using IoT.**
+**An Improved Lightweight MobileNetV2 Model for Real-time Multi-Class Rice Disease Detection Using IoT.**
 
-IoT-RiceMobileNet is a compact deep learning model built on a MobileNetV2 backbone for classifying six rice leaf conditions: five diseases (bacterial leaf blight, brown spot, leaf blast, leaf scald, narrow brown spot) and healthy leaves. It is designed for real-time deployment on resource-constrained mobile and edge devices, and is integrated into an end-to-end IoT pipeline (ESP32-CAM → cloud inference → mobile/web app).
+IoT-RiceMobileNet is a deep learning model built on a MobileNetV2 backbone for classifying six rice leaf conditions: five diseases (bacterial leaf blight, brown spot, leaf blast, leaf scald, narrow brown spot) and healthy leaves. It is designed for real-time deployment on resource-constrained mobile and edge devices, and is integrated into an end-to-end IoT pipeline (ESP32-CAM → cloud inference → mobile/web app).
 
 ## Highlights
 

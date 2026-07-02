@@ -1,0 +1,23 @@
+# Core deep learning
+torch
+torchvision
+
+# Data processing
+numpy
+pandas
+scikit-learn
+
+# Image processing
+Pillow
+
+# Visualization
+matplotlib
+
+# Notebook support
+jupyter
+ipykernel
+
+# API backend
+fastapi
+uvicorn
+python-multipart
